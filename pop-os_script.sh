@@ -122,8 +122,8 @@ flatpak --user install com.zettlr.Zettlr.flatpakref -y
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
 dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
-apt-get update
-apt-get install protonvpn
+apt-get update -y
+apt-get install protonvpn -y
 
 
 
