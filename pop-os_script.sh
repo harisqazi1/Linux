@@ -59,6 +59,10 @@ apt install rhythmbox -y
 apt install thunderbird -y
 #Variety Wallpaper Changer
 apt install variety -y
+#Steam
+apt install steam -y
+#VirtualBox
+apt install virtualbox -y 
 
 
 echo "Flatpak installation"
@@ -108,7 +112,7 @@ wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
 dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
 apt-get update
 apt-get install protonvpn
-echo "Install Steam"
+
 
 
 echo "
