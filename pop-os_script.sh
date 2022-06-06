@@ -38,7 +38,7 @@ apt install htop -y
 #bashtop Linus resource monitor
 apt install bashtop -y
 #Brave Browser 
-apt install apt-transport-https curl
+apt install apt-transport-https curl -y
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
@@ -116,7 +116,7 @@ wget https://dl.flathub.org/repo/appstream/com.zettlr.Zettlr.flatpakref
 flatpak --user install com.zettlr.Zettlr.flatpakref -y
 
 
-
+#freefilesync
 
 #non APT and Flatpak downloads
 echo "Installing ProtonVPN"
