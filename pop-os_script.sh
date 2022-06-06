@@ -105,8 +105,20 @@ flatpak --user install md.obsidian.Obsidian.flatpakref -y
 echo "Installing Planner"
 wget https://dl.flathub.org/repo/appstream/com.github.alainm23.planner.flatpakref
 flatpak --user install com.github.alainm23.planner.flatpakref -y
+echo "Installing Visual Studio Code"
+wget https://dl.flathub.org/repo/appstream/com.visualstudio.code.flatpakref
+flatpak --user install com.visualstudio.code.flatpakref -y
+echo "Installing Vocal"
+wget https://dl.flathub.org/repo/appstream/com.github.needleandthread.vocal.flatpakref
+flatpak --user install com.github.needleandthread.vocal.flatpakref -y
+echo "Installing Zettlr"
+wget https://dl.flathub.org/repo/appstream/com.zettlr.Zettlr.flatpakref
+flatpak --user install com.zettlr.Zettlr.flatpakref -y
 
 
+
+
+#non APT and Flatpak downloads
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
 dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
