@@ -11,9 +11,8 @@ echo "
  / ____// /_/ // ____//_/     / /_/ /___/ /   ___/ // /__ / /   / // /_/ // /_  
 /_/     \____//_/    (_)______\____//____/   /____/ \___//_/   /_// .___/ \__/  
                        /_____/                                   /_/            
-
-                                                                                            
 "
+
 echo "Getting APT applications"
 #Gnome Tweaks
 apt install gnome-tweaks -y
@@ -38,7 +37,8 @@ apt install htop -y
 #bashtop Linus resource monitor
 apt install bashtop -y
 #Brave Browser 
-apt install apt-transport-https curl -y
+apt install apt-transport-https -y
+apt install curl -y
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
