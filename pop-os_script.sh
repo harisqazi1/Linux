@@ -127,6 +127,11 @@ apt-get install protonvpn -y
 
 
 
+echo "Oh my zsh Install"
+apt install zsh -y
+#gonna have to do work for this
+
+
 echo "
 Post Install TO DO:
 https://github.com/arkenfox/user.js setup for FireFox
