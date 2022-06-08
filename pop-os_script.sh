@@ -73,7 +73,6 @@ cd Desktop/
 mkdir Flatpack_files
 cd Flatpack_files #download the files here for easy clean up
 # -y assumes yes for the questions
-#  for downloading flatpaks for the user only
 echo "Citra Gaming Emulator"
 flatpak install flathub org.citra_emu.citra -y 
 echo "Installing Bitwarden"
@@ -114,9 +113,11 @@ apt-get install protonvpn -y
 ## Gnome Look -->  https://www.opendesktop.org/p/1305251/
 echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
-unzip master.zip -d /usr/share/icons/
-gsettings set org.gnome.desktop.interface icon-theme candy-icons
+unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
+gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
+#Remove the Folder at the end
+rm -r ~/Desktop/Flatpack_files/
 
 echo "
 Post Install TO DO:
@@ -125,7 +126,6 @@ Log In to all accounts
 Install OhMyZSH with PowerLevel10k
 
 RESOURCES:
-https://www.patorjk.com/software/taag/
-https://github.com/mikeroyal/Pop_OS-Guide
-https://support.system76.com/articles/install-in-vm/
+https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
+https://support.system76.com/articles/install-in-vm/ -> Testing Code
 "
