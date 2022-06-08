@@ -68,40 +68,40 @@ apt install virtualbox -y
 echo "Flatpak installation"
 echo "---------------------"
 apt install flatpak
-flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add  --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 cd Desktop/
 mkdir Flatpack_files
 cd Flatpack_files #download the files here for easy clean up
 # -y assumes yes for the questions
-# --user for downloading flatpaks for the user only
+#  for downloading flatpaks for the user only
 echo "Citra Gaming Emulator"
-flatpak --user install flathub org.citra_emu.citra -y 
+flatpak install flathub org.citra_emu.citra -y 
 echo "Installing Bitwarden"
-flatpak --user install flathub com.bitwarden.desktop -y
+flatpak install flathub com.bitwarden.desktop -y
 echo "Installing Discord"
-flatpak --user install flathub flathub com.discordapp.Discord -y
+flatpak install flathub flathub com.discordapp.Discord -y
 echo "Installing GitHub Desktop"
-flatpak --user install flathub io.github.shiftey.Desktop -y
+flatpak install flathub io.github.shiftey.Desktop -y
 echo "Installing gPodder"
-flatpak --user install flathub org.gpodder.gpodder -y
+flatpak install flathub org.gpodder.gpodder -y
 echo "Installing Heroic Games Launcher"
-flatpak --user install flathub com.heroicgameslauncher.hgl -y
+flatpak install flathub com.heroicgameslauncher.hgl -y
 echo "Installing FreeTube"
-flatpak --user install flathub io.freetubeapp.FreeTube -y
+flatpak install flathub io.freetubeapp.FreeTube -y
 echo "Installing Kdenlive"
-flatpak --user install flathub org.kde.kdenlive -y
+flatpak install flathub org.kde.kdenlive -y
 echo "Installing Librewolf"
-flatpak --user install flathub io.gitlab.librewolf-community -y
+flatpak install flathub io.gitlab.librewolf-community -y
 echo "Installing Obsidian Markdown editor"
-flatpak --user install flathub md.obsidian.Obsidian -y
+flatpak install flathub md.obsidian.Obsidian -y
 echo "Installing Planner"
-flatpak --user install flathub com.github.alainm23.planner -y
+flatpak install flathub com.github.alainm23.planner -y
 echo "Installing Visual Studio Code"
-flatpak --user install flathub com.visualstudio.code -y
+flatpak install flathub com.visualstudio.code -y
 echo "Installing Vocal"
-flatpak --user install flathub com.github.needleandthread.vocal -y
+flatpak install flathub com.github.needleandthread.vocal -y
 echo "Installing Zettlr"
-flatpak --user install flathub com.zettlr.Zettlr -y
+flatpak install flathub com.zettlr.Zettlr -y
 
 #non APT and Flatpak downloads
 echo "Installing ProtonVPN"
