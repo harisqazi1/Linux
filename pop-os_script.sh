@@ -75,33 +75,33 @@ cd Flatpack_files #download the files here for easy clean up
 # -y assumes yes for the questions
 # --user for downloading flatpaks for the user only
 echo "Citra Gaming Emulator"
-flatpak --user install org.citra_emu.citra -y 
+flatpak --user install flathub org.citra_emu.citra -y 
 echo "Installing Bitwarden"
-flatpak --user install com.bitwarden.desktop -y
+flatpak --user install flathub com.bitwarden.desktop -y
 echo "Installing Discord"
-flatpak --user install flathub com.discordapp.Discord -y
+flatpak --user install flathub flathub com.discordapp.Discord -y
 echo "Installing GitHub Desktop"
-flatpak --user install io.github.shiftey.Desktop -y
+flatpak --user install flathub io.github.shiftey.Desktop -y
 echo "Installing gPodder"
-flatpak --user install org.gpodder.gpodder -y
+flatpak --user install flathub org.gpodder.gpodder -y
 echo "Installing Heroic Games Launcher"
-flatpak --user install com.heroicgameslauncher.hgl -y
+flatpak --user install flathub com.heroicgameslauncher.hgl -y
 echo "Installing FreeTube"
-flatpak --user install io.freetubeapp.FreeTube -y
+flatpak --user install flathub io.freetubeapp.FreeTube -y
 echo "Installing Kdenlive"
-flatpak --user install org.kde.kdenlive -y
+flatpak --user install flathub org.kde.kdenlive -y
 echo "Installing Librewolf"
-flatpak --user install io.gitlab.librewolf-community -y
+flatpak --user install flathub io.gitlab.librewolf-community -y
 echo "Installing Obsidian Markdown editor"
-flatpak --user install md.obsidian.Obsidian -y
+flatpak --user install flathub md.obsidian.Obsidian -y
 echo "Installing Planner"
-flatpak --user install com.github.alainm23.planner -y
+flatpak --user install flathub com.github.alainm23.planner -y
 echo "Installing Visual Studio Code"
-flatpak --user install com.visualstudio.code -y
+flatpak --user install flathub com.visualstudio.code -y
 echo "Installing Vocal"
-flatpak --user install com.github.needleandthread.vocal -y
+flatpak --user install flathub com.github.needleandthread.vocal -y
 echo "Installing Zettlr"
-flatpak --user install com.zettlr.Zettlr -y
+flatpak --user install flathub com.zettlr.Zettlr -y
 
 #non APT and Flatpak downloads
 echo "Installing ProtonVPN"
