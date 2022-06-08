@@ -141,6 +141,9 @@ wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
+#Try with this:
+apt install gnome-tweaks -y
+#could be reason for not working
 echo "
 Post Install TO DO:
 Remove folder from {user}/Desktop/
