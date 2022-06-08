@@ -139,7 +139,6 @@ apt update && apt install signal-desktop
 echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
-sleep 2 #testing
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
 echo "
@@ -152,6 +151,7 @@ Install OhMyZSH with PowerLevel10k
 RESOURCES:
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
+https://askubuntu.com/questions/1162422/how-to-enable-user-themes-in-gsettings-gnome-tweaks
 
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
