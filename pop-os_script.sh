@@ -15,7 +15,7 @@ echo "
 
 #Make sure user is root
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+  then echo "Run as root"
   exit
 fi
 
@@ -139,13 +139,12 @@ apt update && apt install signal-desktop
 echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
+sleep 2 #testing
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
-
-#Remove the Folder at the end
-rm -r ~/Desktop/Flatpack_files/
 
 echo "
 Post Install TO DO:
+Remove folder from {user}/Desktop/
 https://github.com/arkenfox/user.js setup for FireFox
 Log In to all accounts
 Install OhMyZSH with PowerLevel10k
