@@ -13,6 +13,12 @@ echo "
                        /_____/                                   /_/            
 "
 
+#Make sure user is root
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 echo "Getting APT applications"
 #Gnome Tweaks
 apt install gnome-tweaks -y
@@ -63,6 +69,8 @@ apt install variety -y
 apt install steam -y
 #VirtualBox
 apt install virtualbox -y 
+#neofetch install
+apt install neofetch -y
 
 
 echo "Flatpak installation"
@@ -109,6 +117,23 @@ dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes
 apt-get update -y
 apt-get install protonvpn -y
 
+echo "Installing Signal"
+# Link --> https://www.signal.org/download/linux/
+# NOTE: These instructions only work for 64 bit Debian-based
+# Linux distributions such as Ubuntu, Mint etc.
+
+# 1. Install our official public software signing key
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+cat signal-desktop-keyring.gpg | tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+
+# 2. Add our repository to your list of repositories
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
+  tee -a /etc/apt/sources.list.d/signal-xenial.list
+
+# 3. Update your package database and install signal
+apt update && apt install signal-desktop
+
+
 #Candy Icon Set-up --> https://github.com/EliverLara/candy-icons
 ## Gnome Look -->  https://www.opendesktop.org/p/1305251/
 echo "Installing the Candy Icons"
@@ -128,4 +153,8 @@ Install OhMyZSH with PowerLevel10k
 RESOURCES:
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
+
+Some Inspiration from:
+https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
+https://github.com/millerii/pop_os-customize/blob/main/PopOS-install.sh
 "
