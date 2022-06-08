@@ -72,51 +72,36 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 cd Desktop/
 mkdir Flatpack_files
 cd Flatpack_files #download the files here for easy clean up
+# -y assumes yes for the questions
+# --user for downloading flatpaks for the user only
 echo "Citra Gaming Emulator"
-wget https://dl.flathub.org/repo/appstream/org.citra_emu.citra.flatpakref
-flatpak --user install org.citra_emu.citra.flatpakref -y #-y answers the question for you
+flatpak --user install org.citra_emu.citra -y 
 echo "Installing Bitwarden"
-wget https://dl.flathub.org/repo/appstream/com.bitwarden.desktop.flatpakref
-flatpak --user install com.bitwarden.desktop.flatpakref -y
+flatpak --user install com.bitwarden.desktop -y
 echo "Installing Discord"
-wget https://dl.flathub.org/repo/appstream/com.discordapp.Discord.flatpakref
-flatpak --user install com.discordapp.Discord.flatpakref -y
+flatpak --user install flathub com.discordapp.Discord -y
 echo "Installing GitHub Desktop"
-wget https://dl.flathub.org/repo/appstream/io.github.shiftey.Desktop.flatpakref
-flatpak --user install io.github.shiftey.Desktop.flatpakref -y
+flatpak --user install io.github.shiftey.Desktop -y
 echo "Installing gPodder"
-wget https://dl.flathub.org/repo/appstream/org.gpodder.gpodder.flatpakref
-flatpak --user install org.gpodder.gpodder.flatpakref -y
+flatpak --user install org.gpodder.gpodder -y
 echo "Installing Heroic Games Launcher"
-wget https://dl.flathub.org/repo/appstream/com.heroicgameslauncher.hgl.flatpakref
-flatpak --user install com.heroicgameslauncher.hgl.flatpakref -y
+flatpak --user install com.heroicgameslauncher.hgl -y
 echo "Installing FreeTube"
-wget https://dl.flathub.org/repo/appstream/io.freetubeapp.FreeTube.flatpakref
-flatpak --user install io.freetubeapp.FreeTube.flatpakref -y
+flatpak --user install io.freetubeapp.FreeTube -y
 echo "Installing Kdenlive"
-wget https://dl.flathub.org/repo/appstream/org.kde.kdenlive.flatpakref 
-flatpak --user install org.kde.kdenlive.flatpakref -y
+flatpak --user install org.kde.kdenlive -y
 echo "Installing Librewolf"
-wget https://dl.flathub.org/repo/appstream/io.gitlab.librewolf-community.flatpakref
-flatpak --user install io.gitlab.librewolf-community.flatpakref -y
+flatpak --user install io.gitlab.librewolf-community -y
 echo "Installing Obsidian Markdown editor"
-wget https://dl.flathub.org/repo/appstream/md.obsidian.Obsidian.flatpakref
-flatpak --user install md.obsidian.Obsidian.flatpakref -y
+flatpak --user install md.obsidian.Obsidian -y
 echo "Installing Planner"
-wget https://dl.flathub.org/repo/appstream/com.github.alainm23.planner.flatpakref
-flatpak --user install com.github.alainm23.planner.flatpakref -y
+flatpak --user install com.github.alainm23.planner -y
 echo "Installing Visual Studio Code"
-wget https://dl.flathub.org/repo/appstream/com.visualstudio.code.flatpakref
-flatpak --user install com.visualstudio.code.flatpakref -y
+flatpak --user install com.visualstudio.code -y
 echo "Installing Vocal"
-wget https://dl.flathub.org/repo/appstream/com.github.needleandthread.vocal.flatpakref
-flatpak --user install com.github.needleandthread.vocal.flatpakref -y
+flatpak --user install com.github.needleandthread.vocal -y
 echo "Installing Zettlr"
-wget https://dl.flathub.org/repo/appstream/com.zettlr.Zettlr.flatpakref
-flatpak --user install com.zettlr.Zettlr.flatpakref -y
-
-
-#freefilesync
+flatpak --user install com.zettlr.Zettlr -y
 
 #non APT and Flatpak downloads
 echo "Installing ProtonVPN"
@@ -125,18 +110,19 @@ dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes
 apt-get update -y
 apt-get install protonvpn -y
 
-
-
-echo "Oh my zsh Install"
-apt install zsh -y
-#gonna have to do work for this
+#Candy Icon Set-up --> https://github.com/EliverLara/candy-icons
+## Gnome Look -->  https://www.opendesktop.org/p/1305251/
+echo "Installing the Candy Icons"
+wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
+unzip master.zip -d /usr/share/icons/
+gsettings set org.gnome.desktop.interface icon-theme candy-icons
 
 
 echo "
 Post Install TO DO:
 https://github.com/arkenfox/user.js setup for FireFox
 Log In to all accounts
-
+Install OhMyZSH with PowerLevel10k
 
 RESOURCES:
 https://www.patorjk.com/software/taag/
