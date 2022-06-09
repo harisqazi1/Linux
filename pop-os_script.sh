@@ -81,7 +81,6 @@ echo "Flatpak installation"
 echo "---------------------"
 sudo apt install flatpak
 flatpak remote-add  --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-cd Flatpack_files #download the files here for easy clean up
 # -y assumes yes for the questions
 echo "Citra Gaming Emulator"
 flatpak install flathub org.citra_emu.citra -y 
