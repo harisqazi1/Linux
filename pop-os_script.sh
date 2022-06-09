@@ -34,8 +34,6 @@ apt install gnome-tweaks -y
 apt install mpv -y
 #vlc video player
 apt install vlc -y
-#atom IDE
-apt install atom -y
 #Backup software 
 apt install deja-dup -y
 #cleaner software
