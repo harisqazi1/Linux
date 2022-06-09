@@ -135,19 +135,6 @@ sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for us
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
 
-#Flat Remix Theme Set-Up 
-## https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
-' Following was test code for downloading the theme. Work in progress so far.
-sudo apt install gnome-shell-extensions -y
-git clone https://github.com/daniruiz/flat-remix-gnome.git
-mkdir ~/.themes
-sudo mv Flat-Remix-Blue-Dark ~/.themes/
-#apply theme
-gsettings set org.gnome.desktop.interface gtk-theme Flat-Remix-Blue-Dark
-#apply shell theme
-gsettings set org.gnome.desktop.wm.preferences theme Flat-Remix-Blue-Dark
-'
-
 echo "
 Post Install TO DO:
 https://github.com/arkenfox/user.js setup for FireFox
