@@ -13,7 +13,7 @@ echo "
                        /_____/                                   /_/            
 "
 
-#Make sure user is root
+#Make sure user is not root
 if [ "$EUID" -e 0 ]
   then echo "Do Not run as root"
   exit
@@ -21,61 +21,61 @@ fi
 
 echo "Getting APT applications"
 #Gnome Tweaks
-apt install gnome-tweaks -y
+sudo apt install gnome-tweaks -y
 #mpv video player
-apt install mpv -y
+sudo apt install mpv -y
 #vlc video player
-apt install vlc -y
+sudo apt install vlc -y
 #atom IDE
-apt install atom -y
+sudo apt install atom -y
 #Backup software 
-apt install deja-dup -y
+sudo apt install deja-dup -y
 #cleaner software
-apt install bleachbit -y 
+sudo apt install bleachbit -y 
 #Firefox
-apt install firefox -y
+sudo apt install firefox -y
 #flameshot screenshot software
-apt install flameshot -y
+sudo apt install flameshot -y
 #nvtop install - nvidia htop monitoring tool
-apt install nvtop -y
+sudo apt install nvtop -y
 #htop - process viewer linux
-apt install htop -y
+sudo apt install htop -y
 #bashtop Linus resource monitor
-apt install bashtop -y
+sudo apt install bashtop -y
 #Brave Browser 
-apt install apt-transport-https -y
-apt install curl -y
+sudo apt install apt-transport-https -y
+sudo apt install curl -y
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update
-apt install brave-browser -y
+sudo apt install brave-browser -y
 #KeepassXC password manager
-apt install keepassxc -y
+sudo apt install keepassxc -y
 #kid3 mp3 tag editor
-apt install kid3 -y
+sudo apt install kid3 -y
 #comic book reader
-apt install mcomix -y
+sudo apt install mcomix -y
 #OBS Studio
-apt install obs-studio -y
+sudo apt install obs-studio -y
 #qbittorrent - torrent downloader
-apt install qbittorrent -y
+sudo apt install qbittorrent -y
 #RhythmBox Audio Player
-apt install rhythmbox -y
+sudo apt install rhythmbox -y
 #Thunderbird Mail
-apt install thunderbird -y
+sudo apt install thunderbird -y
 #Variety Wallpaper Changer
-apt install variety -y
+sudo apt install variety -y
 #Steam
-apt install steam -y
+sudo apt install steam -y
 #VirtualBox
-apt install virtualbox -y 
+sudo apt install virtualbox -y 
 #neofetch install
-apt install neofetch -y
+sudo apt install neofetch -y
 
 
 echo "Flatpak installation"
 echo "---------------------"
-apt install flatpak
+sudo apt install flatpak
 flatpak remote-add  --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 cd Desktop/
 mkdir Flatpack_files
@@ -113,7 +113,7 @@ flatpak install flathub com.zettlr.Zettlr -y
 #non APT and Flatpak downloads
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
-dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
+sudo dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
 apt-get update -y
 apt-get install protonvpn -y
 
@@ -124,14 +124,14 @@ echo "Installing Signal"
 
 # 1. Install our official public software signing key
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
-cat signal-desktop-keyring.gpg | tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
 
 # 2. Add our repository to your list of repositories
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
-  tee -a /etc/apt/sources.list.d/signal-xenial.list
+  sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 
 # 3. Update your package database and install signal
-apt update && apt install signal-desktop
+sudo apt update && sudo apt install signal-desktop
 
 
 #Candy Icon Set-up --> https://github.com/EliverLara/candy-icons
@@ -142,7 +142,7 @@ unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
 #Try with this:
-apt install gnome-tweaks -y
+sudo apt install gnome-tweaks -y
 #could be reason for not working
 echo "
 Post Install TO DO:
