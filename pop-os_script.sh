@@ -3,6 +3,16 @@
 Author: Haris
 Name: Pop_OS! Setup Script
 Description: A script to help in downloading the essential softwares needed for my setup.
+RESOURCES:
+https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
+https://support.system76.com/articles/install-in-vm/ -> Testing Code
+https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-in-linux/
+https://itsfoss.com/install-themes-ubuntu/
+https://www.linuxfordevices.com/tutorials/linux/change-gnome-them
+Some Inspiration from:
+https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
+https://github.com/millerii/pop_os-customize/blob/main/PopOS-install.sh
+
 '
 echo "
     ____   ____   ____   __      ____  _____    _____              _         __ 
@@ -149,15 +159,4 @@ Install Gnome extensions --> https://extensions.gnome.org/
 > Sound Input & Output Device Chooser --> https://extensions.gnome.org/extension/906/sound-output-device-chooser/
 > User Themes --> https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
 Install OhMyZSH with PowerLevel10k
-
-RESOURCES:
-https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
-https://support.system76.com/articles/install-in-vm/ -> Testing Code
-https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-in-linux/
-https://itsfoss.com/install-themes-ubuntu/
-https://www.linuxfordevices.com/tutorials/linux/change-gnome-them
-
-Some Inspiration from:
-https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
-https://github.com/millerii/pop_os-customize/blob/main/PopOS-install.sh
 "
