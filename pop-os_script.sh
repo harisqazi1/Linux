@@ -140,7 +140,6 @@ wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
-
 #User Theme setup
 gsettings set org.gnome.shell disable-user-extensions false #enable extensions
 
