@@ -141,13 +141,6 @@ wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
-# Flat Remix Theme (Light Blue) --> http://drasite.com/flat-remix-gnome
-## Gnome Look --> https://www.gnome-look.org/p/1214931
-echo "Installing Flat Remix Theme"
-sudo apt install git
-git clone https://github.com/daniruiz/flat-remix-gnome.git
- 
-
 echo "
 Post Install TO DO:
 Remove folder from {user}/Desktop/
@@ -156,8 +149,7 @@ Log In to all accounts
 Install Gnome extensions --> https://extensions.gnome.org/
 > Freon --> https://extensions.gnome.org/extension/841/freon/
 > Sound Input & Output Device Chooser --> https://extensions.gnome.org/extension/906/sound-output-device-chooser/
-> User Themes --> https://extensions.gnome.org/extension/19/user-themes/
-
+> User Themes --> https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
 Install OhMyZSH with PowerLevel10k
 
 RESOURCES:
