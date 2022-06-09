@@ -23,6 +23,9 @@ echo "
                        /_____/                                   /_/            
 "
 
+#Update system and upgrade packages
+sudo apt update && sudo apt upgrade
+
 echo "Getting APT applications"
 #Gnome Tweaks
 sudo apt install gnome-tweaks -y
