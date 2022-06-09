@@ -141,6 +141,7 @@ sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for us
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
 #Flat Remix Theme Set-Up
+## https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
 sudo apt install gnome-shell-extensions
 git clone https://github.com/daniruiz/flat-remix-gnome/tree/master/themes/Flat-Remix-Blue-Dark
 sudo mv Flat-Remix-Blue-Dark /usr/share/themes/
@@ -158,7 +159,6 @@ Log In to all accounts
 Install Gnome extensions --> https://extensions.gnome.org/
 > Freon --> https://extensions.gnome.org/extension/841/freon/
 > Sound Input & Output Device Chooser --> https://extensions.gnome.org/extension/906/sound-output-device-chooser/
-> User Themes --> https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
 Install OhMyZSH with PowerLevel10k
 
 RESOURCES:
