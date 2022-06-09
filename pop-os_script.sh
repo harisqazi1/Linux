@@ -81,8 +81,6 @@ echo "Flatpak installation"
 echo "---------------------"
 sudo apt install flatpak
 flatpak remote-add  --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-cd Desktop/
-mkdir Flatpack_files
 cd Flatpack_files #download the files here for easy clean up
 # -y assumes yes for the questions
 echo "Citra Gaming Emulator"
@@ -136,6 +134,7 @@ wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
+
 #Flat Remix Theme Set-Up 
 ## https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
 ' Following was test code for downloading the theme. Work in progress so far.
@@ -151,7 +150,6 @@ gsettings set org.gnome.desktop.wm.preferences theme Flat-Remix-Blue-Dark
 
 echo "
 Post Install TO DO:
-Remove ~/Desktop/Flat
 https://github.com/arkenfox/user.js setup for FireFox
 Log In to all accounts
 Install Gnome extensions --> https://extensions.gnome.org/
