@@ -15,7 +15,7 @@ echo "
 
 #Make sure user is not root
 if [ "$EUID" -e 0 ]
-  then echo "Do Not run as root"
+  then echo "Do Not run as root. Sudo included already."
   exit
 fi
 
@@ -133,13 +133,17 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
 # 3. Update your package database and install signal
 sudo apt update && sudo apt install signal-desktop
 
-
 #Candy Icon Set-up --> https://github.com/EliverLara/candy-icons
 ## Gnome Look -->  https://www.opendesktop.org/p/1305251/
 echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
+
+
+#User Theme setup
+gsettings set org.gnome.shell disable-user-extensions false #enable extensions
+
 
 echo "
 Post Install TO DO:
@@ -156,6 +160,7 @@ RESOURCES:
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
 https://askubuntu.com/questions/1162422/how-to-enable-user-themes-in-gsettings-gnome-tweaks
+https://askubuntu.com/questions/1029376/how-do-i-enable-and-disable-gnome-extensions-from-the-command-line
 
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
