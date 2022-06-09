@@ -86,7 +86,7 @@ apt install git -y
 echo "Flatpak installation"
 echo "---------------------"
 apt install flatpak
-flatpak remote-add  --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # -y assumes yes for the questions
 echo "Citra Gaming Emulator"
 flatpak install flathub org.citra_emu.citra -y 
