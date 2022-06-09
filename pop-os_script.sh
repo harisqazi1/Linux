@@ -3,6 +3,7 @@
 Author: Haris
 Name: Pop_OS! Setup Script
 Description: A script to help in downloading the essential softwares needed for my setup.
+Latest Test Version: 22.04 | codename: jammy
 RESOURCES:
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
