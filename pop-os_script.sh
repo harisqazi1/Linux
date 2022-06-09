@@ -140,8 +140,14 @@ wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
-#User Theme setup
-gsettings set org.gnome.shell disable-user-extensions false #enable extensions
+#Flat Remix Theme Set-Up
+sudo apt install gnome-shell-extensions
+git clone https://github.com/daniruiz/flat-remix-gnome/tree/master/themes/Flat-Remix-Blue-Dark
+sudo mv Flat-Remix-Blue-Dark /usr/share/themes/
+#apply theme
+gsettings set org.gnome.desktop.interface gtk-theme Flat-Remix-Blue-Dark
+#apply shell theme
+gsettings set org.gnome.desktop.wm.preferences theme Flat-Remix-Blue-Dark
 
 
 echo "
@@ -160,6 +166,7 @@ https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
 https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-in-linux/
 https://itsfoss.com/install-themes-ubuntu/
+https://www.linuxfordevices.com/tutorials/linux/change-gnome-them
 
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
