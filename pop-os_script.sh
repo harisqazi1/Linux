@@ -138,17 +138,26 @@ sudo apt update && sudo apt install signal-desktop
 ## Gnome Look -->  https://www.opendesktop.org/p/1305251/
 echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
-unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
+sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
-#Try with this:
-sudo apt install gnome-tweaks -y
-#could be reason for not working
+# Flat Remix Theme (Light Blue) --> http://drasite.com/flat-remix-gnome
+## Gnome Look --> https://www.gnome-look.org/p/1214931
+echo "Installing Flat Remix Theme"
+sudo apt install git
+git clone https://github.com/daniruiz/flat-remix-gnome.git
+ 
+
 echo "
 Post Install TO DO:
 Remove folder from {user}/Desktop/
 https://github.com/arkenfox/user.js setup for FireFox
 Log In to all accounts
+Install Gnome extensions --> https://extensions.gnome.org/
+> Freon --> https://extensions.gnome.org/extension/841/freon/
+> Sound Input & Output Device Chooser --> https://extensions.gnome.org/extension/906/sound-output-device-chooser/
+> User Themes --> https://extensions.gnome.org/extension/19/user-themes/
+
 Install OhMyZSH with PowerLevel10k
 
 RESOURCES:
