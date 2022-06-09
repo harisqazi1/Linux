@@ -24,65 +24,65 @@ echo "
 "
 
 #Update system and upgrade packages
-sudo apt update && sudo apt upgrade -y
+apt update && apt upgrade -y
 
 echo "Getting APT applications"
 #Gnome Tweaks
-sudo apt install gnome-tweaks -y
+apt install gnome-tweaks -y
 #mpv video player
-sudo apt install mpv -y
+apt install mpv -y
 #vlc video player
-sudo apt install vlc -y
+apt install vlc -y
 #atom IDE
-sudo apt install atom -y
+apt install atom -y
 #Backup software 
-sudo apt install deja-dup -y
+apt install deja-dup -y
 #cleaner software
-sudo apt install bleachbit -y 
+apt install bleachbit -y 
 #Firefox
-sudo apt install firefox -y
+apt install firefox -y
 #flameshot screenshot software
-sudo apt install flameshot -y
+apt install flameshot -y
 #nvtop install - nvidia htop monitoring tool
-sudo apt install nvtop -y
+apt install nvtop -y
 #htop - process viewer linux
-sudo apt install htop -y
+apt install htop -y
 #bashtop Linus resource monitor
-sudo apt install bashtop -y
+apt install bashtop -y
 #Brave Browser 
-sudo apt install apt-transport-https -y
-sudo apt install curl -y
+apt install apt-transport-https -y
+apt install curl -y
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser -y
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
+apt update
+apt install brave-browser -y
 #KeepassXC password manager
-sudo apt install keepassxc -y
+apt install keepassxc -y
 #kid3 mp3 tag editor
-sudo apt install kid3 -y
+apt install kid3 -y
 #comic book reader
-sudo apt install mcomix -y
+apt install mcomix -y
 #OBS Studio
-sudo apt install obs-studio -y
+apt install obs-studio -y
 #qbittorrent - torrent downloader
-sudo apt install qbittorrent -y
+apt install qbittorrent -y
 #RhythmBox Audio Player
-sudo apt install rhythmbox -y
+apt install rhythmbox -y
 #Thunderbird Mail
-sudo apt install thunderbird -y
+apt install thunderbird -y
 #Variety Wallpaper Changer
-sudo apt install variety -y
+apt install variety -y
 #Steam
-sudo apt install steam -y
+apt install steam -y
 #VirtualBox
-sudo apt install virtualbox -y 
+apt install virtualbox -y 
 #neofetch install
-sudo apt install neofetch -y
+apt install neofetch -y
 
 
 echo "Flatpak installation"
 echo "---------------------"
-sudo apt install flatpak
+apt install flatpak
 flatpak remote-add  --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # -y assumes yes for the questions
 echo "Citra Gaming Emulator"
@@ -117,23 +117,23 @@ flatpak install flathub com.zettlr.Zettlr -y
 #non APT and Flatpak downloads
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
-sudo dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
+dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
 apt-get update -y
 apt-get install protonvpn -y
 
 echo "Installing Signal"
 # Link --> https://www.signal.org/download/linux/
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
-cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+cat signal-desktop-keyring.gpg | tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
-  sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-sudo apt update && sudo apt install signal-desktop
+  tee -a /etc/apt/sources.list.d/signal-xenial.list
+apt update && apt install signal-desktop
 
 #Candy Icon Set-up --> https://github.com/EliverLara/candy-icons
 ## Gnome Look -->  https://www.opendesktop.org/p/1305251/
 echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
-sudo unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
+unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
 
