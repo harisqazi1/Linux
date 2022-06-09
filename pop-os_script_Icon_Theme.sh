@@ -16,3 +16,9 @@ echo "Installing the Candy Icons"
 wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
 unzip master.zip -d ~/.icons/ #/usr/share/icons for system-wide install (NEED sudo)
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
+rm master.zip #cleanup
+
+#Flat Theme Set-Up
+git clone https://github.com/daniruiz/flat-remix-gnome.git
+
+

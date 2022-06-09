@@ -78,6 +78,8 @@ apt install steam -y
 apt install virtualbox -y 
 #neofetch install
 apt install neofetch -y
+#git install (For theme install)
+apt install git -y
 
 
 echo "Flatpak installation"
@@ -140,5 +142,8 @@ Install Gnome extensions --> https://extensions.gnome.org/
 > Freon --> https://extensions.gnome.org/extension/841/freon/
 > Sound Input & Output Device Chooser --> https://extensions.gnome.org/extension/906/sound-output-device-chooser/
 > User Themes --> https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
+> Blur my Shell --> https://extensions.gnome.org/extension/3193/blur-my-shell/
+> Dash to Dock (might not work with Cosmic Dock, currently using Cosmic) --> https://extensions.gnome.org/extension/307/dash-to-dock/
+Move dash to the left and change opacity
 Install OhMyZSH with PowerLevel10k
 "
