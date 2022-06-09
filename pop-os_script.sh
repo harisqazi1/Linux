@@ -159,8 +159,8 @@ Install OhMyZSH with PowerLevel10k
 RESOURCES:
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
-https://askubuntu.com/questions/1162422/how-to-enable-user-themes-in-gsettings-gnome-tweaks
-https://askubuntu.com/questions/1029376/how-do-i-enable-and-disable-gnome-extensions-from-the-command-line
+https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-in-linux/
+https://itsfoss.com/install-themes-ubuntu/
 
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
