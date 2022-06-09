@@ -24,7 +24,7 @@ echo "
 "
 
 #Update system and upgrade packages
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 
 echo "Getting APT applications"
 #Gnome Tweaks
