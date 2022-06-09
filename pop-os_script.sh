@@ -142,7 +142,7 @@ gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 
 #Flat Remix Theme Set-Up 
 ## https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
-'
+' Following was test code for downloading the theme. Work in progress so far.
 sudo apt install gnome-shell-extensions -y
 git clone https://github.com/daniruiz/flat-remix-gnome.git
 mkdir ~/.themes
@@ -161,6 +161,7 @@ Log In to all accounts
 Install Gnome extensions --> https://extensions.gnome.org/
 > Freon --> https://extensions.gnome.org/extension/841/freon/
 > Sound Input & Output Device Chooser --> https://extensions.gnome.org/extension/906/sound-output-device-chooser/
+> User Themes --> https://extensions.gnome.org/extension/19/user-themes/ --> http://drasite.com/flat-remix-gnome
 Install OhMyZSH with PowerLevel10k
 
 RESOURCES:
