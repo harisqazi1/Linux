@@ -18,10 +18,11 @@ unzip master.zip -d ~/.icons/ #/usr/share/icons for system-wide install (NEED su
 gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
 rm master.zip #cleanup
 
-#Flat Theme Set-Up 
+#Flat Theme Set-Up (Work in Progress)
+: '
 mv Flat-Remix-Blue-Dark* ~/.themes/
 #apply theme
 gsettings set org.gnome.desktop.interface gtk-theme Flat-Remix-Blue-Dark
 #apply shell theme
 gsettings set org.gnome.desktop.wm.preferences theme Flat-Remix-Blue-Dark
-
+'
