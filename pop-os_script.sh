@@ -14,8 +14,8 @@ echo "
 "
 
 #Make sure user is root
-if [ "$EUID" -ne 0 ]
-  then echo "Run as root"
+if [ "$EUID" -e 0 ]
+  then echo "Do Not run as root"
   exit
 fi
 
