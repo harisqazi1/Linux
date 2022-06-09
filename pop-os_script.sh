@@ -129,16 +129,11 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
   tee -a /etc/apt/sources.list.d/signal-xenial.list
 apt update && apt install signal-desktop
 
-#Candy Icon Set-up --> https://github.com/EliverLara/candy-icons
-## Gnome Look -->  https://www.opendesktop.org/p/1305251/
-echo "Installing the Candy Icons"
-wget https://github.com/EliverLara/candy-icons/archive/refs/heads/master.zip
-unzip master.zip -d /usr/share/icons/ #system-wide install; ~/.icons for user (I think)
-gsettings set org.gnome.desktop.interface icon-theme candy-icons-master
-
-
 echo "
 Post Install TO DO:
+Run pop-os_script_Icon_Theme.sh (no sudo)
+
+
 https://github.com/arkenfox/user.js setup for FireFox
 Log In to all accounts
 Install Gnome extensions --> https://extensions.gnome.org/
