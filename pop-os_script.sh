@@ -120,6 +120,10 @@ echo "Installing Zettlr"
 flatpak install flathub com.zettlr.Zettlr -y
 
 #non APT and Flatpak downloads
+## For throwing away after files are downloaded
+mkdir ~/Desktop/files
+cd ~/Desktop/files
+
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
 dpkg -i protonvpn-stable-release_1.0.1-1_all.deb #Change link when new one comes out
