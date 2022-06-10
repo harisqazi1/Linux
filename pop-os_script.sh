@@ -97,7 +97,7 @@ echo "---------------------"
 apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # -y assumes yes for the questions
-echo "Citra Gaming Emulator"
+echo "Installing Citra Gaming Emulator"
 flatpak install flathub org.citra_emu.citra -y 
 echo "Installing Bitwarden"
 flatpak install flathub com.bitwarden.desktop -y
@@ -131,7 +131,6 @@ flatpak install flathub com.zettlr.Zettlr -y
 mkdir /home/$user/Desktop/files
 chown -R $user /home/$user/Desktop/files #so you are the owner and you can run other files in the folder
 cd /home/$user/Desktop/files/
-
 
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
