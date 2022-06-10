@@ -135,7 +135,9 @@ flatpak install flathub com.zettlr.Zettlr -y
 #non APT and Flatpak downloads
 ## For throwing away after files are downloaded
 mkdir /home/$user/Desktop/files
+chown -R $user /home/$user/Desktop/files
 cd /home/$user/Desktop/files/
+
 
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
@@ -155,6 +157,8 @@ echo "Installing TOR"
 wget https://www.torproject.org/dist/torbrowser/11.0.14/tor-browser-linux64-11.0.14_en-US.tar.xz
 tar xvf tor-browser-linux64-11.0.14_en-US.tar.xz
 echo "Move the Tor folder (optional)"
+
+echo "Installing "
 
 echo "
 Post Install TO DO:
