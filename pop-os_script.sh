@@ -10,6 +10,7 @@ https://support.system76.com/articles/install-in-vm/ -> Testing Code
 https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-in-linux/
 https://itsfoss.com/install-themes-ubuntu/
 https://www.linuxfordevices.com/tutorials/linux/change-gnome-them
+https://stackoverflow.com/questions/18215973/how-to-check-if-running-as-root-in-a-bash-script
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
 https://github.com/millerii/pop_os-customize/blob/main/PopOS-install.sh
@@ -23,6 +24,10 @@ echo "
 /_/     \____//_/    (_)______\____//____/   /____/ \___//_/   /_// .___/ \__/  
                        /_____/                                   /_/            
 "
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
 
 #Update system and upgrade packages
 apt update && apt upgrade -y
