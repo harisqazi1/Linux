@@ -80,7 +80,6 @@ apt install neofetch -y
 #git install (For theme install)
 apt install git -y
 
-
 echo "Flatpak installation"
 echo "---------------------"
 apt install flatpak
@@ -129,6 +128,11 @@ cat signal-desktop-keyring.gpg | tee -a /usr/share/keyrings/signal-desktop-keyri
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' |\
   tee -a /etc/apt/sources.list.d/signal-xenial.list
 apt update && apt install signal-desktop
+
+echo "Installing TOR"
+wget https://www.torproject.org/dist/torbrowser/11.0.14/tor-browser-linux64-11.0.14_en-US.tar.xz
+tar xvf tor-browser-linux64-11.0.14_en-US.tar.xz
+echo "Move the Tor folder (optional)"
 
 echo "
 Post Install TO DO:
