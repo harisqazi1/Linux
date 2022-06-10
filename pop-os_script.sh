@@ -133,8 +133,8 @@ flatpak install flathub com.zettlr.Zettlr -y
 
 #non APT and Flatpak downloads
 ## For throwing away after files are downloaded
-mkdir ~/Desktop/files
-cd ~/Desktop/files/
+mkdir /home/$user/Desktop/files
+cd /home/$user/Desktop/files/
 
 echo "Installing ProtonVPN"
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb
