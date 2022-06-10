@@ -6,6 +6,8 @@ A repo for scripts for my Linux Distro (currently Pop!\_OS).
 
 `wget https://raw.githubusercontent.com/harisqazi1/Linux/main/pop-os_script.sh`
 
+`nano pop-os_script.sh` #edit the user variable to be your username
+
 `sudo bash pop-os_script.sh`
 
 `bash pop-os_script_Icon_Theme.sh`
