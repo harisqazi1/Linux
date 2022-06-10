@@ -11,6 +11,8 @@ https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-
 https://itsfoss.com/install-themes-ubuntu/
 https://www.linuxfordevices.com/tutorials/linux/change-gnome-them
 https://stackoverflow.com/questions/18215973/how-to-check-if-running-as-root-in-a-bash-script
+https://www.educba.com/variables-in-shell-scripting/
+https://stackoverflow.com/questions/3061036/how-to-find-whether-or-not-a-variable-is-empty-in-bash
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
 https://github.com/millerii/pop_os-customize/blob/main/PopOS-install.sh
@@ -24,10 +26,20 @@ echo "
 /_/     \____//_/    (_)______\____//____/   /____/ \___//_/   /_// .___/ \__/  
                        /_____/                                   /_/            
 "
+#Username variable for making the folder on the Desktop (sudo ~/Desktop != ~/Desktop)
+## EDIT THIS VARIABLE
+user=""
+
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
+
+if [ -z "$var" ]
+  then echo "set user variable to be your username"
+  exit
+fi
+
 
 #Update system and upgrade packages
 apt update && apt upgrade -y
