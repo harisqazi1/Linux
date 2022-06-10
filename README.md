@@ -1,6 +1,6 @@
-# Linux
+# Linux Setup Script --> Pop!\_OS
 
-A repo for either scripts or resources for my Linux Distro (currently Pop!\_OS)
+A repo for scripts for my Linux Distro (currently Pop!\_OS).
 
 ### In the Scripts
 - APT Packages
