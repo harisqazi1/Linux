@@ -6,13 +6,13 @@ A repo for scripts for my Linux Distro (currently Pop!\_OS).
 
 `wget https://raw.githubusercontent.com/harisqazi1/Linux/main/pop-os_script.sh`
 
-`nano pop-os_script.sh` #edit the user variable to be your username
+`nano pop-os_script.sh` **edit the user variable to be your username**
 
 `sudo bash pop-os_script.sh`
 
 `bash pop-os_script_Icon_Theme.sh`
 
-The first script includes the second script being downloaded. You just have to run the second script without sudo seperately.
+The first script includes the second script being downloaded. You just have to run the second script **without sudo** seperately.
 
 ### Here are screenshots I have taken while testing my script on a 22.04 Pop!\_OS install:
 
