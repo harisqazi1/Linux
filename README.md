@@ -1,6 +1,6 @@
 # Linux Setup Script --> Pop!\_OS
 
-A repo for scripts for my Linux Distro (currently Pop!\_OS). 
+A repo for scripts for my Linux Distro (currently Pop!\_OS). Still a work in progress. See "What I want the final output to be" below.
 
 ### Usage
 
