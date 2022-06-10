@@ -3,7 +3,8 @@
 Author: Haris
 Name: Pop_OS! Setup Script
 Description: A script to help in downloading the essential softwares needed for my setup.
-Latest Test Version: 22.04 | codename: jammy
+Latest Test Version: 22.04 | codename: jammy 
+Last Updated: Jun 9, 2022
 RESOURCES:
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
@@ -35,7 +36,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-if [ -z "$var" ]
+if [ -z "$user" ]
   then echo "set user variable to be your username"
   exit
 fi
