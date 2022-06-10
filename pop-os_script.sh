@@ -5,15 +5,9 @@ Name: Pop_OS! Setup Script
 Description: A script to help in downloading the essential softwares needed for my setup.
 Latest Test Version: 22.04 | codename: jammy 
 Last Updated: Jun 9, 2022
-RESOURCES:
+RESOURCES (excluding research):
 https://www.patorjk.com/software/taag/ -> ASCII Art (Font: Slant)
 https://support.system76.com/articles/install-in-vm/ -> Testing Code
-https://www.addictivetips.com/ubuntu-linux-tips/install-custom-themes-and-icons-in-linux/
-https://itsfoss.com/install-themes-ubuntu/
-https://www.linuxfordevices.com/tutorials/linux/change-gnome-them
-https://stackoverflow.com/questions/18215973/how-to-check-if-running-as-root-in-a-bash-script
-https://www.educba.com/variables-in-shell-scripting/
-https://stackoverflow.com/questions/3061036/how-to-find-whether-or-not-a-variable-is-empty-in-bash
 Some Inspiration from:
 https://github.com/Clepnicx/fedora-setup/blob/master/fedora-setup.sh
 https://github.com/millerii/pop_os-customize/blob/main/PopOS-install.sh
@@ -135,7 +129,7 @@ flatpak install flathub com.zettlr.Zettlr -y
 #non APT and Flatpak downloads
 ## For throwing away after files are downloaded
 mkdir /home/$user/Desktop/files
-chown -R $user /home/$user/Desktop/files
+chown -R $user /home/$user/Desktop/files #so you are the owner and you can run other files in the folder
 cd /home/$user/Desktop/files/
 
 
@@ -158,7 +152,9 @@ wget https://www.torproject.org/dist/torbrowser/11.0.14/tor-browser-linux64-11.0
 tar xvf tor-browser-linux64-11.0.14_en-US.tar.xz
 echo "Move the Tor folder (optional)"
 
-echo "Installing "
+echo "Installing pop-os_script_Icon_Theme.sh"
+wget https://raw.githubusercontent.com/harisqazi1/Linux/main/pop-os_script_Icon_Theme.sh
+echo "RUN THIS FILE AS $user"
 
 echo "
 Post Install TO DO:
