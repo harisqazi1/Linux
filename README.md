@@ -4,7 +4,7 @@ A repo for scripts for my Linux Distro (currently Pop!\_OS).
 
 ### Usage
 
-`wget https://github.com/harisqazi1/Linux/blob/main/pop-os_script.sh`
+`wget https://raw.githubusercontent.com/harisqazi1/Linux/main/pop-os_script.sh`
 
 `sudo bash pop-os_script.sh`
 
